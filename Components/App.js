@@ -1,8 +1,12 @@
+/**
+ * 将React 和reactDom分别引入
+ */
+
 import React from "react";
-
+import ReactDom from "react-dom";
 import TodoHeader from "./TodoHeader.js";
-
-
+import TodoFooter from "./TodoFooter";
+import TodoMain from "./TodoMain.js"
 
 class App extends React.Component{
     constructor(props){
@@ -10,15 +14,15 @@ class App extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className="appContainer">
                 <TodoHeader/>
+                <TodoMain/>
+                <TodoFooter/>
             </div>
         )
 
     }}
-
-
-React.render(
+ReactDom.render(
     <App/>,
     document.getElementById("content")
 );
