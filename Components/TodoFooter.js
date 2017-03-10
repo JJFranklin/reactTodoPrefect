@@ -8,7 +8,7 @@ class TodoFooter extends React.Component{
         return(
             <div>
                 <input type="checkbox"/>
-                <span>das</span>
+                <span>3个已完成/一共6个</span>
                 <input type="button" value={btnName}/>
             </div>
         );
